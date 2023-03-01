@@ -18,3 +18,8 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/img/profile1.jpg
+    - assets/img/profile2.jpg
+    - assets/img/profile3.jpg
+    - assets/img/profile4.jpg

@@ -11,6 +11,7 @@ class DescriptionPLaceScreen extends StatelessWidget {
       fontWeight: FontWeight.bold,
     );
     //Alt + z = acomodar el texto
+    //Cada imagen que se quira usar, se dee agregar en el archivo pubspec.yaml
     const descriptionText =
         'Ullamco minim ullamco culpa pariatur sint ut. Veniam esse anim aliqua eu aliqua. Aute pariatur laborum nulla sunt amet minim labore ex dolor cillum. Consequat aliqua quis voluptate cupidatat eu occaecat eiusmod elit veniam. Eiusmod ipsum duis pariatur consequat cupidatat et laboris culpa adipisicing commodo pariatur id. Occaecat ex non ipsum adipisicing consequat cupidatat exercitation dolore est ut pariatur est. \n\n Fugiat enim exercitation proident nostrud consequat tempor sit. Velit mollit excepteur consequat cillum voluptate proident. Tempor tempor dolor ad veniam incididunt non. Dolor aliqua est aute voluptate sunt. ';
 
