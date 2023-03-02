@@ -1,19 +1,26 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:travel_app5b/screens/review.dart';
 
 class DescriptionPLaceScreen extends StatelessWidget {
-  const DescriptionPLaceScreen({super.key});
+  final String descriptionPlace;
+  final String namePlace;
+  final int stars;
 
+  const DescriptionPLaceScreen(
+      {super.key,
+      required this.descriptionPlace,
+      required this.namePlace,
+      required this.stars});
+  //Usar la misma ventana para lugares diferentes final field
   @override
   Widget build(BuildContext context) {
     const TextStyle titleStyle = TextStyle(
-      fontSize: 30.0,
+      fontSize: 20.0,
       fontWeight: FontWeight.bold,
     );
     //Alt + z = acomodar el texto
     //Cada imagen que se quira usar, se dee agregar en el archivo pubspec.yaml
-    const descriptionText =
-        'Ullamco minim ullamco culpa pariatur sint ut. Veniam esse anim aliqua eu aliqua. Aute pariatur laborum nulla sunt amet minim labore ex dolor cillum. Consequat aliqua quis voluptate cupidatat eu occaecat eiusmod elit veniam. Eiusmod ipsum duis pariatur consequat cupidatat et laboris culpa adipisicing commodo pariatur id. Occaecat ex non ipsum adipisicing consequat cupidatat exercitation dolore est ut pariatur est. \n\n Fugiat enim exercitation proident nostrud consequat tempor sit. Velit mollit excepteur consequat cillum voluptate proident. Tempor tempor dolor ad veniam incididunt non. Dolor aliqua est aute voluptate sunt. ';
 
     final star = Container(
       margin: const EdgeInsets.only(top: 323.0, right: 3.0),
@@ -30,7 +37,7 @@ class DescriptionPLaceScreen extends StatelessWidget {
         right: 20.0,
       ),
       child: Text(
-        descriptionText,
+        descriptionPlace,
         style: GoogleFonts.questrial(
             textStyle: const TextStyle(
           fontSize: 16.0,
@@ -62,6 +69,7 @@ class DescriptionPLaceScreen extends StatelessWidget {
       children: [
         titleAndStarts,
         description,
+        const Review(),
       ],
     );
   }
