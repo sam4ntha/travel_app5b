@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:travel_app5b/screens/description_place_screen.dart';
+import 'package:travel_app5b/screens/review_list.dart';
 
 void main() {
   runApp(const MainApp());
@@ -15,14 +16,16 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: DescriptionPLaceScreen(
-          namePlace: namePlace,
-          stars: 5,
-          descriptionPlace: descriptionText,
-        ),
+        //Ctrl+k & ctrl+c para comentar rápido
+        // body: DescriptionPLaceScreen(
+        //   namePlace: namePlace,
+        //   stars: 5,
+        //   descriptionPlace: descriptionText,
+        // ),
+        body: ReviewList(),
       ),
     );
   }
