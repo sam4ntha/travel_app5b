@@ -23,7 +23,7 @@ class DescriptionPLaceScreen extends StatelessWidget {
     //Cada imagen que se quira usar, se dee agregar en el archivo pubspec.yaml
 
     final star = Container(
-      margin: const EdgeInsets.only(top: 300.0, right: 3.0),
+      margin: const EdgeInsets.only(top: 350.0, right: 3.0),
       child: const Icon(
         Icons.star,
         color: Colors.amber,
@@ -49,7 +49,7 @@ class DescriptionPLaceScreen extends StatelessWidget {
       children: [
         Container(
           margin: const EdgeInsets.only(
-            top: 300.0,
+            top: 350.0,
             left: 20.0,
             right: 20.0,
           ),
