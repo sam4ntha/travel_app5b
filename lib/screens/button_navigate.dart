@@ -9,7 +9,7 @@ class ButtonNavigate extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      //Permite hacer clic sobre él, y tiene la form que queremos poner sobre él
+      //Permite hacer clic sobre él, y tiene la forma que queremos poner sobre él
       onTap: () {
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(
