@@ -12,7 +12,6 @@ class Header extends StatelessWidget {
       children: [
         GradientBack(title: 'Popular'),
         CardImageList(),
-        
       ],
     );
   }
